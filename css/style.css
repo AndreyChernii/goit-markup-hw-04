@@ -152,6 +152,11 @@ img {
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero.jpg);
 }
 .hero-title {
   font-weight: 900;
@@ -190,6 +195,23 @@ img {
 }
 .peculiarities-item:not(:last-child) {
   margin-right: 30px;
+}
+.peculiarities-item{
+}
+
+.peculiarities-svg{
+  width: 100%;
+  height: 120px;
+  background-color: #F5F4FA;;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.peculiarities-item-link{
+  
 }
 
 .peculiarities-item-title {
@@ -273,7 +295,7 @@ img {
 .team-img {
 }
 
-.wrapper{
+.wrapper {
   padding-top: 30px;
   padding-bottom: 30px;
 }
@@ -285,6 +307,33 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--text-color);
+  margin-bottom: 16px;
+}
+
+.team-soc-list {
+  display: flex;
+  justify-content: center;
+}
+
+.team-soc-item + .team-soc-item {
+  margin-left: 10px;
+}
+
+.team-soc-link {
+  width: 44px;
+  height: 44px;
+  /* background-color: #2196F3; */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: #afb1b8;
+}
+
+.team-soc-link:hover,
+.team-soc-link:focus {
+  background-color: var(--accent-color);
+  fill: #ffffff;
 }
 
 /* ---------------------footer--------------------- */
@@ -347,8 +396,8 @@ img {
 .header .port {
 }
 
-.border-bot{
-    border-bottom: 1px solid #ececec;
+.border-bot {
+  border-bottom: 1px solid #ececec;
   width: 100%;
 }
 
@@ -398,7 +447,7 @@ img {
   margin-bottom: 30px;
 }
 
-.wrapper-port{
+.wrapper-port {
   padding: 20px 24px 20px 24px;
 }
 
